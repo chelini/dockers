@@ -1,7 +1,7 @@
 # Docker file for loop tactics with no external deps except for pet and isl.
 
 # Check http://releases.llvm.org/download.html#9.0.0 for the latest available binaries
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 RUN \
   apt-get update && \
