@@ -5,7 +5,6 @@ FROM ubuntu:18.04
 
 RUN \
   apt-get update && \
-  apt-get upgrade && \
   apt-get -y install git && \
   apt-get -y install cmake && \ 
   apt-get -y install build-essential && \
@@ -15,8 +14,7 @@ RUN \
   apt-get -y install autoconf && \ 
   apt-get -y install libntl-dev && \
   apt-get -y install libxml2-dev && \
-  apt-get -y install libtinfo-dev && \
-  apt-get update 
+  apt-get -y install libtinfo-dev 
 
 # Make sure the image is updated, install some prerequisites,
 # Download the latest version of Clang (official binary) for Ubuntu
