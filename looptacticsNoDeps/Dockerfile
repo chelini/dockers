@@ -3,6 +3,7 @@
 # Check http://releases.llvm.org/download.html#9.0.0 for the latest available binaries
 FROM ubuntu:18.04
 
+# Make sure the image is updated, install some prerequisites,
 RUN \
   apt-get update && \
   apt-get -y install git && \
@@ -16,7 +17,6 @@ RUN \
   apt-get -y install libxml2-dev && \
   apt-get -y install libtinfo-dev 
 
-# Make sure the image is updated, install some prerequisites,
 # Download the latest version of Clang (official binary) for Ubuntu
 # Extract the archive and add Clang to the PATH
 RUN \
